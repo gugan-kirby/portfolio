@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gugan's Story · Full Stack & AI Developer</title>
+  <meta name="description" content="Thalapathigugan K (Gugan), Software Engineer at Zemuria, Puducherry. A manga-style portfolio of the SaaS products I architect and ship.">
+  <meta name="theme-color" content="#9fd8ff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2730%27 fill=%27%23ff8fb1%27 stroke=%27%231b1a2e%27 stroke-width=%274%27/%3E%3Ctext x=%2732%27 y=%2742%27 font-family=%27Arial%27 font-weight=%27900%27 font-size=%2726%27 fill=%27%231b1a2e%27 text-anchor=%27middle%27%3ETK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Zen+Maru+Gothic:wght@500;700;900&family=DotGothic16&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas class="petals" aria-hidden="true"></canvas>
+<div class="progress" aria-hidden="true"><span></span></div>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#top" class="logo"><span class="logo-badge">TK</span><span class="logo-text">Gugan's Story</span></a>
+  <nav class="nav-links" aria-label="Chapters">
+    <a href="#quests">Quests</a>
+    <a href="#levelup">Level up</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="nav-cta">Say hi!</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="sky" aria-hidden="true">
+    <div class="sun"></div>
+    <div class="cloud c1" data-depth="0.2"></div>
+    <div class="cloud c2" data-depth="0.4"></div>
+    <div class="cloud c3" data-depth="0.15"></div>
+    <div class="cloud c4" data-depth="0.3"></div>
+    <svg class="hills" viewBox="0 0 1440 200" preserveAspectRatio="none">
+      <path d="M0 120 C180 60 320 150 520 100 C720 50 860 140 1040 90 C1200 50 1320 110 1440 80 L1440 200 L0 200 Z" fill="#b7e4a8" stroke="#1b1a2e" stroke-width="4"/>
+      <path d="M0 160 C200 120 380 190 600 150 C820 110 1000 180 1220 140 C1320 125 1400 140 1440 135 L1440 200 L0 200 Z" fill="#8fd18a" stroke="#1b1a2e" stroke-width="4"/>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="chapter pop" style="--d:0">Chapter 01 · The developer</p>
+      <h1 class="hero-title">
+        <span class="pop" style="--d:1">Hi, I'm</span>
+        <span class="pop name" style="--d:2">Gugan!</span>
+      </h1>
+      <p class="hero-full pop" style="--d:3">Thalapathigugan K · Full Stack &amp; AI Developer</p>
+      <p class="hero-text pop" style="--d:4">
+        Software Engineer at <b>Zemuria</b> in Puducherry. I architect and build live SaaS
+        products end to end, from Next.js front ends to Django and Go APIs, all the way to the deploy.
+      </p>
+      <div class="hero-cta pop" style="--d:5">
+        <a href="#quests" class="btn btn-pink">See my quests ↓</a>
+        <a href="Thalapathigugan_K_CV.pdf" class="btn btn-white" download>Download CV ✦</a>
+      </div>
+    </div>
+
+    <div class="hero-art" data-depth="0.6">
+      <div class="bubble" aria-live="polite"><span id="say">Hello there!</span><i class="caret"></i></div>
+      <span class="spark s1" aria-hidden="true">✦</span>
+      <span class="spark s2" aria-hidden="true">✧</span>
+      <span class="spark s3" aria-hidden="true">✦</span>
+      <span class="float-tag t1" aria-hidden="true">&lt;/&gt;</span>
+      <span class="float-tag t2" aria-hidden="true">{ }</span>
+
+      <!-- original anime-style character: Gugan coding -->
+      <svg class="dev" viewBox="0 0 400 400" role="img" aria-label="Cartoon of Gugan coding on a laptop with a cat and a coffee mug">
+        <defs>
+          <radialGradient id="screenGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#bff3ff" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#bff3ff" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <!-- floating island shadow -->
+        <ellipse cx="200" cy="392" rx="170" ry="8" fill="#1b1a2e" opacity=".12"/>
+
+        <!-- body / hoodie -->
+        <path d="M108 336 C110 290 138 258 200 258 C262 258 290 290 292 336 Z" fill="#ff6f7d" stroke="#1b1a2e" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M168 262 C176 286 224 286 232 262" fill="#ff9aa5" stroke="#1b1a2e" stroke-width="4"/>
+        <path d="M186 280 L182 306 M214 280 L218 306" stroke="#1b1a2e" stroke-width="3.5" stroke-linecap="round"/>
+        <circle cx="182" cy="309" r="4" fill="#fff" stroke="#1b1a2e" stroke-width="2.5"/>
+        <circle cx="218" cy="309" r="4" fill="#fff" stroke="#1b1a2e" stroke-width="2.5"/>
+
+        <!-- head group (bobs gently) -->
+        <g class="head">
+          <!-- back hair -->
+          <path d="M128 182 C120 112 160 86 202 86 C246 86 284 114 274 184 C266 160 140 160 128 182 Z" fill="#232036" stroke="#1b1a2e" stroke-width="5" stroke-linejoin="round"/>
+          <!-- ears -->
+          <ellipse cx="139" cy="196" rx="11" ry="15" fill="#ffd9c0" stroke="#1b1a2e" stroke-width="4"/>
+          <ellipse cx="263" cy="196" rx="11" ry="15" fill="#ffd9c0" stroke="#1b1a2e" stroke-width="4"/>
+          <!-- face -->
+          <path d="M140 170 C140 132 168 116 201 116 C234 116 262 132 262 170 C262 216 236 246 201 246 C166 246 140 216 140 170 Z" fill="#ffe2cc" stroke="#1b1a2e" stroke-width="5"/>
+          <!-- blush -->
+          <ellipse class="blush" cx="163" cy="212" rx="12" ry="6" fill="#ff8fb1" opacity=".55"/>
+          <ellipse class="blush" cx="239" cy="212" rx="12" ry="6" fill="#ff8fb1" opacity=".55"/>
+          <!-- eyes -->
+          <g class="eyes">
+            <g transform="translate(176 192)">
+              <ellipse rx="12" ry="16" fill="#2a2150"/>
+              <ellipse cy="6" rx="9" ry="8" fill="#6b5cff"/>
+              <circle cx="-4" cy="-6" r="5" fill="#fff"/>
+              <circle cx="4" cy="6" r="2.2" fill="#fff"/>
+            </g>
+            <g transform="translate(226 192)">
+              <ellipse rx="12" ry="16" fill="#2a2150"/>
+              <ellipse cy="6" rx="9" ry="8" fill="#6b5cff"/>
+              <circle cx="-4" cy="-6" r="5" fill="#fff"/>
+              <circle cx="4" cy="6" r="2.2" fill="#fff"/>
+            </g>
+          </g>
+          <!-- brows -->
+          <path d="M164 168 Q176 162 188 167 M214 167 Q226 162 238 168" fill="none" stroke="#1b1a2e" stroke-width="4" stroke-linecap="round"/>
+          <!-- mouth -->
+          <path d="M192 222 Q201 231 210 222" fill="#ff7a8a" stroke="#1b1a2e" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- front spiky bangs -->
+          <path class="bangs" d="M134 176 C126 118 162 92 202 92 C246 92 280 120 268 176 L258 146 L250 172 L238 136 L226 166 L212 130 L200 164 L188 130 L176 166 L164 136 L154 170 L146 146 Z" fill="#2c2843" stroke="#1b1a2e" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M170 104 Q190 98 206 106" fill="none" stroke="#5b5680" stroke-width="4" stroke-linecap="round"/>
+          <!-- ahoge (antenna strand) -->
+          <path class="ahoge" d="M204 94 C196 64 222 50 232 64 C222 60 210 70 212 92" fill="#2c2843" stroke="#1b1a2e" stroke-width="4" stroke-linejoin="round"/>
+          <!-- headphones -->
+          <path d="M132 168 C130 98 272 98 270 168" fill="none" stroke="#ffd84d" stroke-width="9" stroke-linecap="round"/>
+          <path d="M132 168 C130 98 272 98 270 168" fill="none" stroke="#1b1a2e" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>
+          <rect x="118" y="176" width="22" height="38" rx="10" fill="#ffd84d" stroke="#1b1a2e" stroke-width="4"/>
+          <rect x="262" y="176" width="22" height="38" rx="10" fill="#ffd84d" stroke="#1b1a2e" stroke-width="4"/>
+        </g>
+
+        <!-- screen glow on chest -->
+        <ellipse cx="200" cy="300" rx="80" ry="40" fill="url(#screenGlow)" class="glow"/>
+
+        <!-- hands (typing) -->
+        <circle class="hand hl" cx="126" cy="326" r="15" fill="#ffe2cc" stroke="#1b1a2e" stroke-width="4"/>
+        <circle class="hand hr" cx="274" cy="326" r="15" fill="#ffe2cc" stroke="#1b1a2e" stroke-width="4"/>
+
+        <!-- laptop (back faces us) -->
+        <path d="M140 270 L260 270 Q266 270 266 276 L270 338 L130 338 L134 276 Q134 270 140 270 Z" fill="#e6ecf5" stroke="#1b1a2e" stroke-width="5" stroke-linejoin="round"/>
+        <circle cx="200" cy="304" r="17" fill="#ff8fb1" stroke="#1b1a2e" stroke-width="3.5"/>
+        <text x="200" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-weight="900" font-size="15" fill="#1b1a2e">TK</text>
+        <rect x="108" y="336" width="184" height="10" rx="5" fill="#c7d0dd" stroke="#1b1a2e" stroke-width="4"/>
+
+        <!-- desk -->
+        <rect x="10" y="344" width="380" height="20" rx="8" fill="#f2b880" stroke="#1b1a2e" stroke-width="5"/>
+        <path d="M40 364 L40 392 M360 364 L360 392" stroke="#1b1a2e" stroke-width="6" stroke-linecap="round"/>
+
+        <!-- coffee mug with steam -->
+        <g transform="translate(318 300)">
+          <path class="steam st1" d="M10 -8 C2 -18 18 -24 10 -36" fill="none" stroke="#1b1a2e" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+          <path class="steam st2" d="M24 -6 C16 -18 32 -24 24 -38" fill="none" stroke="#1b1a2e" stroke-width="3" stroke-linecap="round" opacity=".5"/>
+          <path d="M36 14 C52 14 52 34 36 34" fill="none" stroke="#1b1a2e" stroke-width="5"/>
+          <rect x="0" y="0" width="38" height="44" rx="6" fill="#7fd1ff" stroke="#1b1a2e" stroke-width="5"/>
+          <path d="M8 16 L16 24 L8 32" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+
+        <!-- cat -->
+        <g transform="translate(36 268)">
+          <path class="tail" d="M60 70 C92 66 96 30 78 20" fill="none" stroke="#1b1a2e" stroke-width="13" stroke-linecap="round"/>
+          <path class="tail" d="M60 70 C92 66 96 30 78 20" fill="none" stroke="#fff6e9" stroke-width="6" stroke-linecap="round"/>
+          <ellipse cx="42" cy="58" rx="32" ry="20" fill="#fff6e9" stroke="#1b1a2e" stroke-width="5"/>
+          <g class="cat-head">
+            <path d="M12 26 L10 0 L28 14 Z M52 14 L70 0 L68 26 Z" fill="#fff6e9" stroke="#1b1a2e" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M15 8 L22 15 M65 8 L58 15" stroke="#ff8fb1" stroke-width="4" stroke-linecap="round"/>
+            <ellipse cx="40" cy="30" rx="31" ry="24" fill="#fff6e9" stroke="#1b1a2e" stroke-width="5"/>
+            <path class="cat-eye" d="M24 30 Q29 25 34 30 M46 30 Q51 25 56 30" fill="none" stroke="#1b1a2e" stroke-width="4" stroke-linecap="round"/>
+            <path d="M37 38 L40 41 L43 38" fill="none" stroke="#1b1a2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <ellipse cx="20" cy="40" rx="6" ry="3.5" fill="#ff8fb1" opacity=".6"/>
+            <ellipse cx="60" cy="40" rx="6" ry="3.5" fill="#ff8fb1" opacity=".6"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <a href="#story" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- MANGA BAND -->
+<div class="band" aria-hidden="true">
+  <div class="band-track">
+    <span>Next.js</span><b>★</b><span>React</span><b>★</b><span>TypeScript</span><b>★</b><span>Django</span><b>★</b><span>Go</span><b>★</b><span>Node.js</span><b>★</b><span>PostgreSQL</span><b>★</b><span>Supabase</span><b>★</b><span>LangChain</span><b>★</b><span>Vercel</span><b>★</b>
+    <span>Next.js</span><b>★</b><span>React</span><b>★</b><span>TypeScript</span><b>★</b><span>Django</span><b>★</b><span>Go</span><b>★</b><span>Node.js</span><b>★</b><span>PostgreSQL</span><b>★</b><span>Supabase</span><b>★</b><span>LangChain</span><b>★</b><span>Vercel</span><b>★</b>
+  </div>
+</div>
+
+<!-- ============ STORY ============ -->
+<section class="section story" id="story">
+  <p class="chapter reveal">Chapter 02 · Origin story</p>
+  <div class="story-grid">
+    <div class="speech reveal">
+      <p>
+        I take products from a <mark>blank architecture diagram</mark> to a
+        <mark>live production URL</mark>: frontend, backend, data, auth and deploy.
+        I also build LLM features into the products I ship.
+        Every change is tested and reviewed before it ships!
+      </p>
+      <span class="speech-tail" aria-hidden="true"></span>
+    </div>
+    <div class="powerups">
+      <div class="power reveal"><strong data-count="3">0</strong><span>live SaaS products built at Zemuria</span></div>
+      <div class="power reveal"><strong data-count="2500" data-suffix="+">0</strong><span>commits across my projects</span></div>
+      <div class="power reveal"><strong data-count="3">0</strong><span>backend languages: Python, Go, TypeScript</span></div>
+      <div class="power reveal"><strong data-count="5">0</strong><span>certifications, incl. Azure AI</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUESTS (WORK) ============ -->
+<section class="section quests" id="quests">
+  <p class="chapter reveal">Chapter 03 · Quests completed</p>
+  <h2 class="title reveal">Products I've <span class="hl">built &amp; shipped</span></h2>
+
+  <div class="manga">
+    <a class="panel p-big reveal" href="https://mysamantha.ai" target="_blank" rel="noopener">
+      <div class="panel-img" style="background-image:url('images/mysamantha.png')"></div>
+      <span class="sfx sfx-pink">SHIP!</span>
+      <div class="caption">
+        <span class="tag">Architect · Full stack</span>
+        <h3>mySamantha ↗</h3>
+        <p>Personal workspace for notes, tasks, journal, email and calendar, with AI only when you want it.</p>
+        <small>Django · PostgreSQL · Supabase</small>
+      </div>
+    </a>
+
+    <div class="panel p-tall reveal">
+      <div class="panel-art art-shop" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <path d="M30 80 L170 80 L170 170 L30 170 Z" fill="#fff6e9" stroke="#1b1a2e" stroke-width="5"/>
+          <path d="M20 80 L40 40 L160 40 L180 80 Z" fill="#ff6f7d" stroke="#1b1a2e" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M20 80 Q30 96 40 80 Q50 96 60 80 Q70 96 80 80 Q90 96 100 80 Q110 96 120 80 Q130 96 140 80 Q150 96 160 80 Q170 96 180 80" fill="#fff" stroke="#1b1a2e" stroke-width="4"/>
+          <rect x="48" y="108" width="44" height="62" rx="4" fill="#7fd1ff" stroke="#1b1a2e" stroke-width="5"/>
+          <rect x="108" y="108" width="46" height="34" rx="4" fill="#ffd84d" stroke="#1b1a2e" stroke-width="5"/>
+          <circle cx="84" cy="140" r="4" fill="#1b1a2e"/>
+          <text x="131" y="131" text-anchor="middle" font-family="Arial" font-weight="900" font-size="14" fill="#1b1a2e">OPEN</text>
+        </svg>
+      </div>
+      <span class="sfx sfx-yellow">GO!</span>
+      <div class="caption">
+        <span class="tag">Architect · Full stack</span>
+        <h3>Mercemur</h3>
+        <p>Storefront SaaS. I designed the architecture, then built the storefront, the dashboard and the Go services, and handled the production deploys.</p>
+        <small>Go · PostgreSQL · Supabase</small>
+      </div>
+    </div>
+
+    <div class="panel p-wide reveal">
+      <div class="panel-art art-ink" aria-hidden="true">
+        <svg viewBox="0 0 260 160">
+          <rect x="30" y="30" width="80" height="104" rx="6" fill="#fff" stroke="#1b1a2e" stroke-width="5" transform="rotate(-8 70 82)"/>
+          <rect x="90" y="24" width="80" height="104" rx="6" fill="#fff6e9" stroke="#1b1a2e" stroke-width="5"/>
+          <rect x="150" y="30" width="80" height="104" rx="6" fill="#fff" stroke="#1b1a2e" stroke-width="5" transform="rotate(8 190 82)"/>
+          <path d="M104 46 H156 M104 62 H150 M104 78 H156 M104 94 H140" stroke="#1b1a2e" stroke-width="4" stroke-linecap="round"/>
+          <path class="pen" d="M196 112 L236 52 L248 60 L208 120 L192 126 Z" fill="#6b5cff" stroke="#1b1a2e" stroke-width="4" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <span class="sfx sfx-blue">WRITE!</span>
+      <div class="caption">
+        <span class="tag">Full stack developer</span>
+        <h3>InkSigma</h3>
+        <p>v2 of a multi-tenant blog engine where each tenant runs its own blog. Built with the product team.</p>
+        <small>Next.js · Express · PostgreSQL</small>
+      </div>
+    </div>
+
+    <a class="panel p-half reveal" href="https://senatio.com" target="_blank" rel="noopener">
+      <div class="panel-img" style="background-image:url('images/senatio.png')"></div>
+      <span class="sfx sfx-pink">~150 COMMITS</span>
+      <div class="caption">
+        <span class="tag">Build &amp; maintain</span>
+        <h3>senatio.com ↗</h3>
+        <p>Company website, built and maintained in Next.js and React.</p>
+      </div>
+    </a>
+
+    <a class="panel p-half reveal" href="https://llmcontrols.ai" target="_blank" rel="noopener">
+      <div class="panel-img" style="background-image:url('images/llmcontrols.png')"></div>
+      <span class="sfx sfx-yellow">~150 COMMITS</span>
+      <div class="caption">
+        <span class="tag">Build &amp; maintain</span>
+        <h3>llmcontrols.ai ↗</h3>
+        <p>Website for an enterprise AI operations platform, built in Next.js and React.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ LEVEL UP (EXPERIENCE) ============ -->
+<section class="section levelup" id="levelup">
+  <p class="chapter reveal">Chapter 04 · Level up!</p>
+  <h2 class="title reveal">The <span class="hl">Zemuria</span> arc</h2>
+
+  <div class="xp reveal">
+    <div class="xp-bar"><span class="xp-fill"></span></div>
+    <ol class="xp-levels">
+      <li><b>Lv.1</b> Trainee<small>May 2025</small></li>
+      <li><b>Lv.2</b> SDE Intern<small>Mar 2026</small></li>
+      <li class="now"><b>Lv.3</b> Software Engineer<small>2026 · now</small></li>
+    </ol>
+  </div>
+
+  <div class="dialog reveal">
+    <div class="dialog-head">
+      <span class="dialog-name">Zemuria · Software Engineer</span>
+      <span class="dialog-date">May 2025 – Present</span>
+    </div>
+    <ul>
+      <li><b>mySamantha &amp; Mercemur:</b> designed the system architecture, then built across it: frontend, Django and Go APIs, PostgreSQL and Supabase data models, integrations and releases.</li>
+      <li><b>InkSigma:</b> developed v2 of the multi-tenant blog engine on Next.js, Express and PostgreSQL.</li>
+      <li>Built and maintain <b>senatio.com</b> and <b>llmcontrols.ai</b> in Next.js and React.</li>
+      <li>Implement sign-in and security: SSO, OAuth logins, secure sessions and idle sign-out.</li>
+      <li>Ship to production on Linux VPS and Vercel, handling domains, DNS, SSL and Google Analytics.</li>
+      <li>Work in small branches with pull requests and code review, testing every change before merge.</li>
+    </ul>
+    <span class="dialog-next" aria-hidden="true">▼</span>
+  </div>
+
+  <div class="dialog dialog-alt reveal">
+    <div class="dialog-head">
+      <span class="dialog-name">Training arc · NTTF, Bangalore</span>
+      <span class="dialog-date">Jan 2025 – Apr 2025</span>
+    </div>
+    <ul>
+      <li>Trained machine learning models and applied deep learning and computer vision techniques.</li>
+      <li>Built Streamlit web apps on top of the models; handled data cleaning, preprocessing and feature engineering.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SKILLS (INVENTORY) ============ -->
+<section class="section skills" id="skills">
+  <p class="chapter reveal">Chapter 05 · Inventory</p>
+  <h2 class="title reveal">Skills <span class="hl">unlocked</span></h2>
+
+  <div class="inventory">
+    <div class="item reveal" style="--c:#7fd1ff"><span class="item-ico">⌘</span><h3>Frontend</h3><p>TypeScript · JavaScript · Next.js · React · HTML · CSS · Angular</p></div>
+    <div class="item reveal" style="--c:#ff8fb1"><span class="item-ico">⚙</span><h3>Backend</h3><p>Node.js &amp; Express · Django · Go · REST APIs · OAuth 2.0 · SSO · Session security</p></div>
+    <div class="item reveal" style="--c:#ffd84d"><span class="item-ico">◈</span><h3>Architecture</h3><p>System design · Multi-tenant SaaS · REST API design · Data modelling</p></div>
+    <div class="item reveal" style="--c:#b7e4a8"><span class="item-ico">⛁</span><h3>Data</h3><p>PostgreSQL · Supabase · Redis</p></div>
+    <div class="item reveal" style="--c:#c9b8ff"><span class="item-ico">✦</span><h3>AI &amp; LLMs</h3><p>LLM API integration · LangChain · Langflow · Ollama · Gemini API · Groq · Streamlit · Pandas</p></div>
+    <div class="item reveal" style="--c:#ffb27a"><span class="item-ico">☁</span><h3>Deploy &amp; Ops</h3><p>Linux VPS · Vercel · Render · Cloudflare · DNS · SSL · Resend</p></div>
+    <div class="item reveal" style="--c:#7fe0c9"><span class="item-ico">⌕</span><h3>SEO &amp; Analytics</h3><p>On-page SEO · Meta tags · JSON-LD · Sitemaps · Page speed · Google Analytics</p></div>
+    <div class="item reveal" style="--c:#ffa3c4"><span class="item-ico">⎇</span><h3>Workflow</h3><p>Git · GitHub · Pull requests · Code review · Testing</p></div>
+  </div>
+</section>
+
+<!-- ============ SIDE QUESTS (LAB) ============ -->
+<section class="section side" id="side">
+  <p class="chapter reveal">Chapter 06 · Side quests</p>
+  <h2 class="title reveal">AI projects for <span class="hl">fun</span></h2>
+
+  <div class="cards">
+    <article class="card reveal">
+      <div class="card-top" style="--c:#7fd1ff"><span>No.01</span><span class="card-ico">📊</span></div>
+      <h3>AI Data Analyst</h3>
+      <p>Upload CSV, Excel or other files and ask questions in plain English. The LLM writes the analysis and returns insights and charts.</p>
+      <small>Python · LangChain · Groq · Streamlit · Pandas</small>
+    </article>
+    <article class="card reveal">
+      <div class="card-top" style="--c:#ff8fb1"><span>No.02</span><span class="card-ico">📄</span></div>
+      <h3>Chat with PDF</h3>
+      <p>A chatbot that parses uploaded PDFs and answers questions about their content using LangChain retrieval.</p>
+      <small>Python · LangChain · PyPDF2 · Streamlit</small>
+    </article>
+    <article class="card reveal">
+      <div class="card-top" style="--c:#c9b8ff"><span>No.03</span><span class="card-ico">💬</span></div>
+      <h3>Gemini AI Chatbot</h3>
+      <p>A conversational assistant built on the Gemini API with a Streamlit chat interface.</p>
+      <small>Python · Gemini API · Streamlit</small>
+    </article>
+  </div>
+</section>
+
+<!-- ============ ACADEMY ============ -->
+<section class="section academy" id="academy">
+  <p class="chapter reveal">Chapter 07 · Academy</p>
+  <div class="academy-grid">
+    <div class="school reveal">
+      <span class="school-year">2021 – 2024</span>
+      <h3>B.Tech, Information Technology</h3>
+      <p>RAAK College of Engineering and Technology · CGPA 7.5/10</p>
+    </div>
+    <div class="school reveal">
+      <span class="school-year">2018 – 2021</span>
+      <h3>Diploma, Computer Science Engineering</h3>
+      <p>Hayagriva Polytechnic College · 79.9%</p>
+    </div>
+  </div>
+  <ul class="stickers">
+    <li class="sticker reveal" style="--r:-4deg;--c:#7fd1ff">Microsoft Certified: Azure AI Fundamentals</li>
+    <li class="sticker reveal" style="--r:3deg;--c:#ffd84d">Google UX Design</li>
+    <li class="sticker reveal" style="--r:-2deg;--c:#b7e4a8">Google IT Automation with Python</li>
+    <li class="sticker reveal" style="--r:4deg;--c:#ff8fb1">Data Analytics · NoviTech R&amp;D</li>
+    <li class="sticker reveal" style="--r:-3deg;--c:#c9b8ff">Angular Program · Askan Technologies</li>
+  </ul>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="speedlines" aria-hidden="true"></div>
+  <p class="chapter reveal">Final chapter</p>
+  <h2 class="contact-title reveal">To be continued… <span>with you?</span></h2>
+  <p class="contact-text reveal">I'm open to new projects and roles. Send a message and let's build something that ships.</p>
+
+  <button class="email reveal" type="button" data-email="gugantennyson@gmail.com">
+    gugantennyson@gmail.com <small>click to copy</small>
+  </button>
+
+  <div class="contact-links reveal">
+    <a href="mailto:gugantennyson@gmail.com" class="btn btn-pink">Email ✉</a>
+    <a href="https://linkedin.com/in/gugan22" target="_blank" rel="noopener" class="btn btn-white">LinkedIn ↗</a>
+    <a href="tel:+916379657387" class="btn btn-white">+91 63796 57387</a>
+    <a href="Thalapathigugan_K_CV.pdf" download class="btn btn-yellow">Download CV ↓</a>
+  </div>
+
+  <footer class="foot">
+    <span>© 2026 Thalapathigugan K</span>
+    <span>Puducherry, India · Remote (IST) · <span id="clock">--:--</span></span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+</section>
+
+</main>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="main.js"></script>
+</body>
+</html>
