@@ -8,4 +8,4 @@ Personal portfolio of **Thalapathigugan K (Gugan)**, Full Stack & AI Developer. 
 | [`anime/`](anime/) | Manga style: an animated anime character, sakura petals and comic panels |
 | [`shonen/`](shonen/) | Dark neon shonen style: night city, rain, lightning and an animated character |
 
-Open any folder's `index.html` in a browser to view it.
+The root `index.html` shows one of the three at random, and each refresh switches to a different one. To open one style directly, go to its folder (`clean/`, `anime/` or `shonen/`).
